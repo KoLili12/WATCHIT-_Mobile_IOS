@@ -37,6 +37,30 @@
 			);
 			target = 4E4C344D2CB3BEDE00B2BFBE /* WATCHIT? */;
 		};
+		4E4C349E2CB3C17900B2BFBE /* Exceptions for "Resources" folder in "WATCHIT?Tests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Teko-Bold.ttf",
+				"Teko-Light.ttf",
+				"Teko-Medium.ttf",
+				"Teko-Regular.ttf",
+				"Teko-SemiBold.ttf",
+				"Teko-VariableFont_wght.ttf",
+			);
+			target = 4E4C34662CB3BEE000B2BFBE /* WATCHIT?Tests */;
+		};
+		4E4C349F2CB3C17900B2BFBE /* Exceptions for "Resources" folder in "WATCHIT?UITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Teko-Bold.ttf",
+				"Teko-Light.ttf",
+				"Teko-Medium.ttf",
+				"Teko-Regular.ttf",
+				"Teko-SemiBold.ttf",
+				"Teko-VariableFont_wght.ttf",
+			);
+			target = 4E4C34702CB3BEE000B2BFBE /* WATCHIT?UITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -56,6 +80,15 @@
 		4E4C34742CB3BEE000B2BFBE /* WATCHIT?UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "WATCHIT?UITests";
+			sourceTree = "<group>";
+		};
+		4E4C34852CB3C0EA00B2BFBE /* Resources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4E4C349E2CB3C17900B2BFBE /* Exceptions for "Resources" folder in "WATCHIT?Tests" target */,
+				4E4C349F2CB3C17900B2BFBE /* Exceptions for "Resources" folder in "WATCHIT?UITests" target */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,6 +121,7 @@
 		4E4C34452CB3BEDE00B2BFBE = {
 			isa = PBXGroup;
 			children = (
+				4E4C34852CB3C0EA00B2BFBE /* Resources */,
 				4E4C34502CB3BEDE00B2BFBE /* WATCHIT? */,
 				4E4C346A2CB3BEE000B2BFBE /* WATCHIT?Tests */,
 				4E4C34742CB3BEE000B2BFBE /* WATCHIT?UITests */,
@@ -122,6 +156,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				4E4C34502CB3BEDE00B2BFBE /* WATCHIT? */,
+				4E4C34852CB3C0EA00B2BFBE /* Resources */,
 			);
 			name = "WATCHIT?";
 			packageProductDependencies = (

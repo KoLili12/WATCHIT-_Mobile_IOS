@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Pe-0o-QyP">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--[ ДОМ ] -->
+        <scene sceneID="ilZ-Z3-AXH">
+            <objects>
+                <navigationController id="8Pe-0o-QyP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="[ ДОМ ] " id="Xd9-0r-4nH"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U9A-kd-6lN">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Nff-iJ-KdJ" kind="relationship" relationship="rootViewController" id="PGY-wm-4PD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLU-9c-Gbr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1822" y="-146"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0nZ-hd-Obd">
+            <objects>
+                <viewController id="Nff-iJ-KdJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aiv-zE-Fxk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="x1j-j8-9fJ"/>
+                        <color key="backgroundColor" name="BlackWatchit?"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lfi-1C-FrY">
+                        <centerItemGroups>
+                            <barButtonItemGroup customizationDisposition="fixed" id="AAb-Ps-tlO">
+                                <barButtonItems>
+                                    <barButtonItem title="Item" id="fS1-fI-PbR"/>
+                                </barButtonItems>
+                            </barButtonItemGroup>
+                        </centerItemGroups>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Фильмы" id="xiR-Nw-dME">
+                                <connections>
+                                    <segue destination="zNY-5t-0IY" kind="show" id="tpF-MX-fOT"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Сериалы " id="W2o-V6-Sdh">
+                                <connections>
+                                    <segue destination="zNY-5t-0IY" kind="show" id="BUd-wh-mWY"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cj5-rw-ZGV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1821" y="568"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Pee-Vn-sFb">
+            <objects>
+                <navigationController id="zNY-5t-0IY" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="x4d-oO-oy2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LYh-O9-Txa">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PpR-s4-N2G" kind="relationship" relationship="rootViewController" id="oap-cK-kbO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O09-ab-NaA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1822" y="1244"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MeF-i7-80W">
+            <objects>
+                <viewController id="PpR-s4-N2G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="44x-4f-vcq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="t1P-6T-R3S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ys0-os-Sim">
+                        <nil key="title"/>
+                        <barButtonItem key="backBarButtonItem" title="[ ОБРАТНО К НОВИНКАМ ]" id="XlW-pV-ui9"/>
+                        <centerItemGroups>
+                            <barButtonItemGroup customizationDisposition="fixed" id="7BN-iO-CHo">
+                                <barButtonItems>
+                                    <barButtonItem title="Item" id="L8u-wE-G9L"/>
+                                </barButtonItems>
+                            </barButtonItemGroup>
+                        </centerItemGroups>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="7zs-mL-X3O">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="v5z-5d-wAs">
+                                <rect key="frame" x="144.66666666666663" y="5" width="187.66666666666663" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="[ ПЕРЕЙТИ К ТОПУ ]"/>
+                                <connections>
+                                    <segue destination="IYV-3K-1lA" kind="show" id="f58-K8-WxY"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qME-Eh-AZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1822" y="1970"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lGy-1V-28d">
+            <objects>
+                <viewController id="IYV-3K-1lA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S10-iw-YbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WTC-sm-v4l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="z8B-ec-AEp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7G-Z2-8pW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1822" y="2677"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="BUd-wh-mWY"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <namedColor name="BlackWatchit?">
+            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

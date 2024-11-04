@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BHG-Ud-vtP">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cnB-vv-UJQ">
+            <objects>
+                <viewController id="efb-Uc-efY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="beI-Ye-U4I">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JOF-Bc-cJs"/>
+                        <color key="backgroundColor" name="BlackWatchit?"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ysf-tt-dXQ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Rv3-2q-bTY">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="czK-ZH-wmw">
+                                <rect key="frame" x="266" y="4.6666666666666679" width="111" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Настройки"/>
+                                <connections>
+                                    <segue destination="Jmt-H6-azA" kind="show" id="LfE-ZN-23Z"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlm-d4-hdq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="1329"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RBm-pY-bpk">
+            <objects>
+                <viewController id="Jmt-H6-azA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="96h-aG-bZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Lu9-vA-1h0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" customizationIdentifier="" id="rPK-Nr-ji0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dk0-9u-omh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="2042"/>
+        </scene>
+        <!--[ АККАУНТ ]-->
+        <scene sceneID="yWa-q2-dNh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9lg-cF-1eW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BHG-Ud-vtP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="[ АККАУНТ ]" id="HBp-ji-l71"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VQ4-6x-p4n">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="efb-Uc-efY" kind="relationship" relationship="rootViewController" id="kJZ-go-1GB"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1802" y="607"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BlackWatchit?">
+            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

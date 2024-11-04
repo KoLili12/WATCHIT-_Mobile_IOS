@@ -8,10 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet var MovieButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        MovieButton.layer.cornerRadius = 20
     }
 
 
